@@ -5,25 +5,26 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7749FDB4-75A6-4E5E-8C30-42D585340AE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venus.Application", "src\Venus.Application\Venus.Application.csproj", "{75CF16AB-4EC8-4CB4-B532-7BE422A1C720}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venus.Application", "src\Venus.Application\Venus.Application.csproj", "{75CF16AB-4EC8-4CB4-B532-7BE422A1C720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venus.CLI", "src\Venus.CLI\Venus.CLI.csproj", "{BFDB5469-364C-4E9B-903C-65DB6E474A54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venus.CLI", "src\Venus.CLI\Venus.CLI.csproj", "{BFDB5469-364C-4E9B-903C-65DB6E474A54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venus.Domain", "src\Venus.Domain\Venus.Domain.csproj", "{3FD2BD2A-FCDE-4F4B-A2F4-B00F0FD4E2A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venus.Domain", "src\Venus.Domain\Venus.Domain.csproj", "{3FD2BD2A-FCDE-4F4B-A2F4-B00F0FD4E2A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venus.Repository", "src\Venus.Repository\Venus.Repository.csproj", "{C49975DC-8E70-48D2-902B-059A8D25B1FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venus.Repository", "src\Venus.Repository\Venus.Repository.csproj", "{C49975DC-8E70-48D2-902B-059A8D25B1FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4F65296C-BBCC-4B56-A136-7B59469C1EEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venus.Tests", "test\Venus.Tests\Venus.Tests.csproj", "{989799E7-D6C7-4C33-8615-14DD1ABCA1F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venus.Tests", "test\Venus.Tests\Venus.Tests.csproj", "{989799E7-D6C7-4C33-8615-14DD1ABCA1F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Venus.MVC", "src\Venus.MVC\Venus.MVC.csproj", "{FAFDEA24-699D-4939-A34A-F8BD561CB55F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Venus.MigrationsHost", "src\Venus.MigrationsHost\Venus.MigrationsHost.csproj", "{584A7F5C-15E6-4911-89FB-38C03B38C873}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{75CF16AB-4EC8-4CB4-B532-7BE422A1C720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,6 +47,17 @@ Global
 		{989799E7-D6C7-4C33-8615-14DD1ABCA1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{989799E7-D6C7-4C33-8615-14DD1ABCA1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{989799E7-D6C7-4C33-8615-14DD1ABCA1F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFDEA24-699D-4939-A34A-F8BD561CB55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFDEA24-699D-4939-A34A-F8BD561CB55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFDEA24-699D-4939-A34A-F8BD561CB55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFDEA24-699D-4939-A34A-F8BD561CB55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{584A7F5C-15E6-4911-89FB-38C03B38C873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584A7F5C-15E6-4911-89FB-38C03B38C873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584A7F5C-15E6-4911-89FB-38C03B38C873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584A7F5C-15E6-4911-89FB-38C03B38C873}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{75CF16AB-4EC8-4CB4-B532-7BE422A1C720} = {7749FDB4-75A6-4E5E-8C30-42D585340AE6}
@@ -53,5 +65,7 @@ Global
 		{3FD2BD2A-FCDE-4F4B-A2F4-B00F0FD4E2A6} = {7749FDB4-75A6-4E5E-8C30-42D585340AE6}
 		{C49975DC-8E70-48D2-902B-059A8D25B1FB} = {7749FDB4-75A6-4E5E-8C30-42D585340AE6}
 		{989799E7-D6C7-4C33-8615-14DD1ABCA1F1} = {4F65296C-BBCC-4B56-A136-7B59469C1EEE}
+		{FAFDEA24-699D-4939-A34A-F8BD561CB55F} = {7749FDB4-75A6-4E5E-8C30-42D585340AE6}
+		{584A7F5C-15E6-4911-89FB-38C03B38C873} = {7749FDB4-75A6-4E5E-8C30-42D585340AE6}
 	EndGlobalSection
 EndGlobal

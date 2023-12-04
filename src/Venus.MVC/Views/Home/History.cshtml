@@ -1,0 +1,32 @@
+﻿@model CongestionRegionRecordViewModel
+@{
+    <style></style>
+}
+
+<div class="container-md border border-3 border-primary">
+    <div class="row">
+        <div class="col-lg-4 border-1 ">
+            @Model.Id
+        </div>
+        <div class="col-lg-4">
+            @Model.Vehicle.VehicleType
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>DateTime</th>
+                <th>Tax</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var mod in Model.RecordDate)
+            {
+                <tr>
+                    <td>@mod.ToString("G")</td>
+                    <td>12</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

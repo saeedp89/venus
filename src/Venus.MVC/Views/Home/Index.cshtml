@@ -1,0 +1,29 @@
+﻿@model IEnumerable<VehicleViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="table-responsive-lg">
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Car plate NO</th>
+            <th>Car Type</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var v in Model)
+        {
+            <tr>
+                <td>@v.PlateNumber</td>
+                <td>@v.VehicleType</td>
+                <td>
+                    <a asp-controller="Home" asp-action="History" asp-route-id="@v.Id">Congestion Tax</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

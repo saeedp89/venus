@@ -22,7 +22,7 @@ var dates = """
             """;
 var listOfDates = dates.Split("\r\n").Select(DateTime.Parse).ToList();
 var eachDayList = listOfDates.GroupBy(x => x.Date).ToList();
-var calc = new CongestionTaxCalculator();
+var calc = new CongestionFeeCalculator();
 foreach (var d in eachDayList)
 {
     foreach (var dd in d)
@@ -30,7 +30,7 @@ foreach (var d in eachDayList)
         Console.Write($"{dd,-30}");
     }
 
-    Console.WriteLine($"\nDate: {d.Key}\nTax: {calc.GetTax(new Car(), d.ToArray())}");
+    // Console.WriteLine($"\nDate: {d.Key}\nTax: {calc.GetTax(new Car(), d.ToArray())}");
 
     Console.WriteLine($"###################################");
 }
